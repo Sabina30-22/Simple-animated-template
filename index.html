@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Animated Testimonial Slider</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="container">
+        <div class="testimonial-slider">
+            <div class="testimonial-content">
+                <div class="user-info">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Shakib Al Hasan born 24 March 1987. He is a Bangladeshi cricketer and current 
+                    captain in Test and T20I cricket of Bangladesh national cricket team.He is ranked
+                     no 1 all-rounder in ICC ODI Players rankings.He employs an aggressive left-handed 
+                     batting style in the middle order and controlled slow left-arm orthodox bowling.
+                     He was ranked 90th most famous athlete in the world by ESPN in 2019.</p>
+                     <i class="fa fa-quote-right"></i>
+                     <br>
+                     <span><i class="fas fa-heart"></i>SHAKIB AL HASAN , CRICKET PLAYER <i class="fas fa-heart"></i></span>
+                </div>
+
+                <div class="user-info active-info">
+                    <i class="fa fa-quote-left"></i>
+                     <p>Munzereen Shahid is an young Bangladeshi Talented woman who was born in October 19
+                        1996 in Chittagong, Bangladesh and also raised in there. She is an English 
+                        teacher at 10 Minute School, Bangladesh’s largest online educational platform.
+                         Her teaching video lectures have already reached 23 million students across 
+                         the country. Her IELTS score is 8.5.  Munjerin completed her
+                           undergraduate and postgraduate studies in English from Dhaka University.</p>
+                     <i class="fa fa-quote-right"></i>
+                     <br>
+                     <span><i class="fas fa-heart"></i>Munzereen Shahid, English Teacher<i class="fas fa-heart"></i></span>
+                </div>
+
+                <div class="user-info">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Tawhid was born in Barisal, Bangladesh, and was raised in Dhaka.He born January 5, 1997.
+                       His father is Nasir Uddin Sathi, and he has a sister named Prami Afridi. He 
+                       completed his college education from Dhaka College. He later moved to London,
+                        England and was a student of New York Film Academy in London.</p>
+                     <i class="fa fa-quote-right"></i>
+                     <br>
+                     <span><i class="fas fa-heart"></i>Tawhid Afridi, Bangladeshi Youtuber<i class="fas fa-heart"></i></span>
+                </div>
+
+                <div class="user-info">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Sabrina Porshi is a Bangladeshi singer. Her career began when she was 2nd 
+                      runner-up in a music talent hunt show, Channel i "Khude gaan raj", in 2008.
+                      Porshi's first song recording was for a movie in 2009 arranged by "Khude Gaan Raj"
+                      team. Porshi was born on 30 July to a Muslim family in Dhaka, Bangladesh.Her home 
+                      district is Brahmanbaria.Porshi lived at Uttara for 14 years. 
+                      She moved to Cambrian College to study commerce.</p>
+                     <i class="fa fa-quote-right"></i>
+                     <br>
+                     <span><i class="fas fa-heart"></i>Sabrina Porshi, Bangladeshi Singer<i class="fas fa-heart"></i></span>
+                </div>
+
+                <div class="user-info">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Ayman Sadiq is a Bangladeshi Internet personality, public speaker, and online 
+                      teacher who established 10 minutes of school in March 2015. This is an institution; 
+                      Which provides free education information and collaboration online. 
+                      This institution is primarily a primary, secondary, higher secondary and admission 
+                      test, which is included in the academic syllabus and how to improve skills on 
+                      various subjects.</p>
+                     <i class="fa fa-quote-right"></i>
+                     <br>
+                     <span><i class="fas fa-heart"></i>Ayman Sadiq, Public Speaker & Blooger <i class="fas fa-heart"></i></span>
+                </div>
+
+                <div class="user-info">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Tanjin Tisha is a Bangladeshi actress, model and television presenter. She has 
+                        acted in television serials and dramas. She won Meril Prothom Alo Awards in Best 
+                        Newcomer category for her performance in the drama U-Turn.Tisha started her career through 
+                        fashion shoot and ramp modelling in 2011. Tisha first modeled in an advertising campaign of 
+                        Robi directed by Amitabh Reza Chowdhury in 2012.</p>
+                     <i class="fa fa-quote-right"></i>
+                     <br>
+                     <span><i class="fas fa-heart"></i>Tanjin Tisha, Model & Actress <i class="fas fa-heart"></i></span>
+                </div>
+            </div>
+
+            <div class="testimonial-slider-pic">
+                <img src="./images-folder/shakib-image.png" alt="" class="slider-img" onclick="showSliderContent()">
+                <img src="./images-folder/Munzeen-image.png" alt="" class="slider-img active-img" onclick="showSliderContent()">
+                <img src="./images-folder/afridi-image.jpg" alt="" class="slider-img" onclick="showSliderContent()">
+                <img src="./images-folder/Porshi-image.png" alt="" class="slider-img" onclick="showSliderContent()">
+                <img src="./images-folder/Ayman-image.png" alt="" class="slider-img" onclick="showSliderContent()">    
+                <img src="./images-folder/Tanjin-image.png" alt="" class="slider-img" onclick="showSliderContent()">
+        </div>
+     </div>
+     <script>
+        let userInfoTexts = document.getElementsByClassName("user-info");
+        let sliderImgs = document.getElementsByClassName("slider-img");
+
+        function showSliderContent(){
+            for(userInfoText of userInfoTexts){
+                userInfoText.classList.remove("active-info");
+            }
+            for(sliderImg of sliderImgs){
+                sliderImg.classList.remove("active-img");
+            }
+          let x = Array.from(sliderImgs).indexOf(event.target);
+          sliderImgs[x].classList.add("active-img");
+          userInfoTexts[x].classList.add("active-info");
+        }
+     </script>
+</body>
+</html>
